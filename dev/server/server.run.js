@@ -7,6 +7,7 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 
 app.get('/', (req, res) => {
+
   res.sendFile(__dirname + '/index.html');
 });
 
@@ -27,5 +28,6 @@ io.on('connection', (socket) => {
 
 
 http.listen(4488, () => {
+  console.log(__dirname + '/index.html');
   console.log('listening on port 3344');
 });
