@@ -1,0 +1,8 @@
+:root {
+  --purple: #847AD1;
+  --red: red;
+}
+
+.input-container {
+  background: var(--purple);
+}

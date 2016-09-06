@@ -1,20 +1,14 @@
-'use strict';
-
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-export default class List extends Component {
-
+export default React.createClass({
   render(){
     return(
-      <div className="chat-list">
-        <Link to="/chat/1">Chat</Link>
-        <Link to="/create-chat">CreateChat</Link>
-      </div>
+      <div>CHAT LIST</div>
     );
   }
+});
 
-}
 
 
 /*

@@ -6,7 +6,7 @@ module.exports = {
 
   debug: true,
 
-  entry: './dev/client/Flux/app.jsx',
+  entry: './dev/client/flux/app.js',
 
   output: {
     filename: 'bundle.js',
