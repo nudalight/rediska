@@ -1,0 +1,16 @@
+.root-intro {
+  background: pink;
+  height: 100%;
+}
+
+.root-intro .il {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.root-intro .il .intro-form {
+  max-width: 30em;
+}
+

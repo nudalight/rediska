@@ -3,7 +3,20 @@ import React from 'react';
 export default React.createClass({
   render(){
     return(
-      <div>CREATE CHAT</div>
+      <div className="root-create-chat">
+        <div className="il">
+          
+          
+          <div className="create-chat-form">
+            <form>
+              <input 
+                type="text"
+              />
+            </form>
+          </div>
+          
+        </div>
+      </div>
     );
   }
 });

@@ -11,8 +11,7 @@ export default React.createClass({
           <form>
             <div className="input-container">
               <input placeholder={ this.props.nickname } />
-              <span>Type in your name and press Enter</span>
-              
+              <span className="subtext">Type in your name and press Enter</span>
               <Errors />
             </div>
             

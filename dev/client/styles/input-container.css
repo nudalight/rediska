@@ -1,0 +1,20 @@
+.input-container {
+  /*background: rgba(40, 20, 100, .3);*/
+}
+
+.input-container > * {
+  display: block;
+  width: 100%;
+}
+
+
+.input-container input {
+  font-size: 2em;
+  padding: .2em .4em;
+  width: 100%;
+}
+
+.input-container .subtext {
+  font-style: italic;
+  opacity: .8;
+}

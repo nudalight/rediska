@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --port 6060 --inline --content-base .",
-    "preinstall": "xcowsay \"Щас я буду все устанавливать, нахуй!\" --image=pic.png",
-    "postinstall": "xcowsay \"Все установилось.\" --image=pic.png && xcowsay \"Можешь ебашить!\" --image=pic.png"
+    "myth:watch": "node ./dev/kong/myth-watch.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +24,7 @@
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",
     "brunch": "^2.8.2",
+    "myth": "^1.5.0",
     "pug": "^2.0.0-beta6",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",

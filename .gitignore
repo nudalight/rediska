@@ -3,7 +3,7 @@
 
 
 # Logs
-.log
+*.log
 
 
 # Dependencies
