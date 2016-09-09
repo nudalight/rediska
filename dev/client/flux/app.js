@@ -25,11 +25,3 @@ ReactDOM.render(
   document.getElementsByClassName('rediska-app-container')[0]
 );
 
-
-// Router.run(routes, (Hander, state) => {
-//   React.render(<Handler />, document.body);
-//   // someAction.transition(state.params);
-// });
-//  
-
-

@@ -81,11 +81,6 @@ io.on('connection', (socket) => {
 
       console.log('ALREADY IN DB:', reply);
 
-      // let updated = [];
-      // updated.push('for test');
-      // updated.push(msg);
-
-
       let m1 = [JSON.stringify(msg)];
       // console.log('BEFORE WRITE:', m1);
 
@@ -94,13 +89,6 @@ io.on('connection', (socket) => {
         if (err) console.log('LPUSHERR:', err);
 
         console.log('DONE LPUSH', reply);
-
-        // pub.smembers(msg.channel, (err, reply) => {
-        //   if (err) console.log('GETERR', err);
-        //   console.log('AFTER WRITE:', reply);
-        //
-        // });
-
         pub.lrange(msg.channel, 0, -1, function callback(err, reply){
 
           if (err) console.log('errRange:', err);
@@ -109,72 +97,9 @@ io.on('connection', (socket) => {
         });
 
       });
-
-
-
-      // pub.del(msg.channel);
-
-
-
-
-      // pub.set(msg.channel, updated, function callback(err, reply){
-      //   if (err) return err;
-      //
-      //   console.log('ATTEMPT:', reply);
-      //
-      //   pub.get(msg.channel, function callback(err, reply){
-      //     if (err) return err;
-      //     console.log('AFTER WRITE:', JSON.parse(reply));
-      //
-      //   });
-      // });
-
     });
 
 
-
-
-
-
-    // pub.hmset(msg.channel, {
-    //   'javascript': 'AngularJS',
-    //   'css': 'Bootstrap',
-    //   'node': 'Express'
-    // }, function callback(err, reply){
-    //
-    //   if (err) return err;
-    //   console.log('wrote object:', reply);
-    //
-    //   pub.hgetall(msg.channel, (err, obj) => {
-    //     console.log('CHECKED:', obj);
-    //   });
-    //
-    // });
-
-
-    // pub.hmset(msg.channel, ['a', 'b'], (err, res) => {
-    //
-    //   if (err) throw err;
-    //
-    // });
-
-
-    // pub.sadd(msg.channel, 'RPUSHTEST');
-
-    // pub.rpush(msg.channel, 'RPUSHTEST');
-
-    // pub.get(msg.channel, (err, data) => {
-    //
-    //   let toWrite = [];
-    //
-    //   toWrite.push(data);
-    //   toWrite.push(jsonData);
-    //   console.log('DATA:', toWrite);
-    //
-    //
-    //   pub.set(msg.channel, JSON.parse(toWrite));
-    //
-    // });
   }
 
 
@@ -190,9 +115,6 @@ io.on('connection', (socket) => {
     console.log('GOT SUB MSG:', data);
     socket.emit('channel:post', data);
   }
-
-
-
 
 
 });
